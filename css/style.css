@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(to right, #49a09d, #5f2c82);
+    height: 100vh;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container h1{
+    color: var(--bs-info)
+}
+input{
+    background-color: transparent !important;
+    color: white !important;
+}
+input::placeholder{
+    color: #eee !important;
+}
+input:focus{
+    border-color: #80bdff !important;
+    box-shadow: none !important;
+}
+.btn-outline-info:hover{
+    color: white;
+}
+.container p{
+    color: white;
+}
+.container a{
+    color: white;
+    text-decoration: none;
+}
+.container a:hover{
+    text-decoration: underline;
+}

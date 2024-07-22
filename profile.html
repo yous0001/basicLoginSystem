@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">SMART LOGIN</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                        <button class="btn btn-outline-info" onclick="logOut()">Log out</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5 p-5 w-50 text-center shadow-lg">
+        <h1 id="welcome">Welcome </h1>
+    </div>
+    <script>
+        if(localStorage.getItem("currentuser")!==null){
+            let currentuser=localStorage.getItem("currentuser");
+            document.getElementById("welcome").innerHTML=`welcome ${currentuser}`;
+        }
+    </script>
+    <script src="./jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</body>
+</html>
